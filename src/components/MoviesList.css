@@ -1,0 +1,38 @@
+/* MovieList.css */
+
+.movie-card-link {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .movie-card {
+    background-color: #1e2738;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+    width: 100%;
+    max-width: 200px;
+  }
+  
+  .movie-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  }
+  
+  .movie-card h3 {
+    color: #ff9900;
+    font-size: 1.2em;
+  }
+  
+  .movie-card p {
+    color: #bbbbbb;
+    font-size: 0.9em;
+  }
+  
+  .movie-card img {
+    width: 100%;
+    height: auto;
+  }
+  

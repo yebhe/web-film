@@ -1,0 +1,9 @@
+# Node modules
+node_modules/
+
+# Build output
+build/
+
+# Other files you don't want to commit
+*.log
+*.env

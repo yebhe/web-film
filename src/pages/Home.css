@@ -1,0 +1,158 @@
+/* App.css */
+
+/* Style global de l'application */
+.app-container {
+    background-color: #10141e;
+    color: #ffffff;
+    min-height: 100vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* En-tête */
+  .header {
+    width: 100%;
+    padding: 20px;
+    background-color: #1c2230;
+    border-bottom: 2px solid #2e3545;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  
+  .app-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ff9900;
+    margin: 0;
+  }
+  
+  /* Barre de recherche */
+  form {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  input[type="text"] {
+    padding: 12px;
+    width: 300px;
+    border: none;
+    border-radius: 8px 0 0 8px;
+    font-size: 1em;
+    color: #333;
+  }
+  
+  button[type="submit"] {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 0 8px 8px 0;
+    background-color: #ff9900;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #e68a00;
+  }
+  
+  /* Contenu principal */
+  .content {
+    padding-top: 20px;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  /* Pagination */
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .pagination button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 1em;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .pagination button:hover {
+    background-color: #555;
+  }
+  
+  .pagination button:disabled {
+    background-color: #777;
+    cursor: not-allowed;
+  }
+  
+  /* Grille des films */
+  .movies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+  }
+  
+  /* Carte de film */
+  .movie-card {
+    background-color: #1e2738;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+    width: 100%;
+    max-width: 200px;
+  }
+  
+  .movie-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  }
+  
+  .movie-card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .movie-card h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #ff9900;
+  }
+  
+  .movie-card p {
+    color: #bbbbbb;
+    font-size: 0.9em;
+    margin: 0;
+    padding: 10px 0;
+  }
+  
+
+  @media screen and (max-width: 700px) {
+    .btn-recherche{
+      margin-bottom: 10px;
+    }
+    .form-search{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
